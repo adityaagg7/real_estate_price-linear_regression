@@ -23,6 +23,11 @@ regressor = LinearRegression()
 regressor.fit(x_tr, y_tr)
 y_p = regressor.predict(x_t)
 
+mae = metrics.mean_absolute_error(y_t, y_p)
+mse = metrics.mean_squared_error(y_t, y_p)
+list = [mae, mse]
+print(pd.DataFrame(list))
+
 res_error = y_t-y_p
 pt.scatter(y_t, res_error, color="red")
 pt.show()

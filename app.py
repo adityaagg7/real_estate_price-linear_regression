@@ -1,4 +1,5 @@
 
+from typing import List
 from sklearn import metrics
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -13,7 +14,7 @@ print(df.shape)
 if np.isnan(df.values).any():
     df.fillna(df.means())
 
-print(df.head())
+
 x = df.iloc[:, 2:8].values
 y = df.iloc[:, -1].values
 
@@ -25,9 +26,14 @@ y_p = regressor.predict(x_t)
 
 mae = metrics.mean_absolute_error(y_t, y_p)
 mse = metrics.mean_squared_error(y_t, y_p)
-list = [mae, mse]
-print(pd.DataFrame(list))
+
+error = [['MAE', mae], ['MSE', mse]]
+er = pd.DataFrame(error, columns=['Error', 'Value'])
+
+print(er)
 
 res_error = y_t-y_p
 pt.scatter(y_t, res_error, color="red")
+pt.xlabel('Test Value')
+pt.ylabel('Residual Error')
 pt.show()

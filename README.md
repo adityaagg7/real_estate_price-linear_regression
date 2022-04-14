@@ -9,12 +9,15 @@ The model was made succesfully and the *mean squared error* and * mean absolute 
 
 However, in the **Test Value V/S Residual Error** plot:
 
-we see that 
+![TEST VALUE V/S Residual ERROR plot](/data/PLOT%20SS.png)
+
+we see that :
  
 1. The plot is not symmetric about x-axis,
 2. The plot is not normal accross the Test Values,
 
-Both of these reasons suggest that a Linear model is not suited for this data.
+
+Both of these observations suggest that a Linear model is not suited for this data.
 
 
 ## Packages Used

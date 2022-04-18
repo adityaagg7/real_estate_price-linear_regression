@@ -17,12 +17,13 @@ x = df.iloc[:, 2:8].values
 y = df.iloc[:, -1].values
 
 
-poly_feat = PolynomialFeatures(degree=2)
+poly_feat = PolynomialFeatures(degree=3)
 x_poly = poly_feat.fit_transform(x)
 
 x_poly_train, x_poly_test, y_train, y_test = train_test_split(
-    x, y, random_state=0)
-
+    x, y, test_size=0.2, random_state=0)
+print(x.shape)
+print(x_poly.shape)
 
 poly_lin_regressor = LinearRegression()
 poly_lin_regressor.fit(x_poly_train, y_train)

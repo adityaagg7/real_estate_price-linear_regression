@@ -14,7 +14,7 @@ The dataset can be found [HERE](https://www.kaggle.com/datasets/quantbruce/real-
 
 ## Observation
 
-The model was made succesfully and the *mean squared error* and * mean absolute error* were found.
+The model was made succesfully and the *mean squared error* and *mean absolute error* were found.
 
 However, in the **Test Value V/S Residual Error** plot:
 

@@ -18,10 +18,13 @@ The model was made succesfully and the *mean squared error* and *mean absolute e
 
 However, in the **Test Value V/S Residual Error** plot:
 
-![TEST VALUE V/S Residual ERROR plot](/data/PLOT%20SS.png)
+![TEST VALUE V/S Residual ERROR plot](/data/PLOT.png)
 
 we see that :
  
-1. The plot is not symmetric about x-axis,
+1. The plot is completely positive,
 2. The plot is not normal accross the Test Values.
+
+The average Residual error was found to be  -5.514624901304367e-13.
+
 

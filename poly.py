@@ -13,7 +13,7 @@ print(df.shape)
 if np.isnan(df.values).any():
     df.fillna(df.means())
 
-x = df.iloc[:, 2:8].values
+x = df.iloc[:, 1:8].values
 y = df.iloc[:, -1].values
 
 

@@ -15,7 +15,7 @@ if np.isnan(df.values).any():
     df.fillna(df.means())
 
 
-x = df.iloc[:, 2:8].values
+x = df.iloc[:, 1:8].values
 y = df.iloc[:, -1].values
 
 x_tr, x_t, y_tr, y_t = train_test_split(x, y, test_size=0.2, random_state=0)

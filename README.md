@@ -25,5 +25,3 @@ we see that :
 1. The plot is not symmetric about x-axis,
 2. The plot is not normal accross the Test Values.
 
-
-Both of these observations suggest that a Linear model is not suited for this data.

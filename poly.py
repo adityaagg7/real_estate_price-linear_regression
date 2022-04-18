@@ -17,7 +17,7 @@ x = df.iloc[:, 2:8].values
 y = df.iloc[:, -1].values
 
 
-poly_feat = PolynomialFeatures(degree=3)
+poly_feat = PolynomialFeatures(degree=2)
 x_poly = poly_feat.fit_transform(x)
 
 x_poly_train, x_poly_test, y_train, y_test = train_test_split(
@@ -47,3 +47,7 @@ pt.show()
 
 print(y_pred)
 print(y_test)
+print(res_error)
+
+average_res = sum(res_error)/len(res_error)
+print(average_res)

@@ -22,8 +22,9 @@ However, in the **Test Value V/S Residual Error** plot:
 
 we see that :
  
-1. The plot is not symmetric about x-axis,
+1. The plot is completely positive,
 2. The plot is not normal accross the Test Values.
 
+The average Residual error was found to be  -5.514624901304367e-13.
 
-Both of these observations suggest that a Linear model is not suited for this data.
+

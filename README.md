@@ -18,7 +18,7 @@ The model was made succesfully and the *mean squared error* and *mean absolute e
 
 However, in the **Test Value V/S Residual Error** plot:
 
-![TEST VALUE V/S Residual ERROR plot](/data/PLOT%20SS.png)
+![TEST VALUE V/S Residual ERROR plot](/data/PLOT.png)
 
 we see that :
  

@@ -46,11 +46,3 @@ pt.scatter(y_test, res_error, color='Red')
 pt.xlabel('Test Value')
 pt.ylabel('Residual Error')
 pt.show()
-
-
-# print(y_pred)
-# print(y_test)
-# print(res_error)
-
-# average_res = sum(res_error)/len(res_error)
-# print(average_res)

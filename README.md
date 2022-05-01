@@ -40,4 +40,6 @@ We immediately notice that:
  
  Both these observations mean that the model fit better than a linear model.
 
- 
+ This is further suppoorted \by the values of the R<sup>2</sup> scores for both:
+
+ Polynomial: ***0.9999999999999998***

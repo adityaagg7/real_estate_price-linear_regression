@@ -43,8 +43,4 @@ We immediately notice that:
 1. The graph is more normally distributed along the x-axis,
 2. It is more symmetrical about x-axis.
  
- Both these observations mean that the model fit better than a linear model.
-
- This is further suppoorted by the values of the R<sup>2</sup> scores for both:
-
- Polynomial: ***0.9999999999999998***
+ Both these observations mean that the model might fit better than a linear model.

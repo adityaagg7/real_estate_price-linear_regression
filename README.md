@@ -12,8 +12,7 @@ Different methods used:
 - pandas
 - sklearn
 
-The dataset can be found [HERE](https://www.kaggle.com/datasets/quantbruce/real-estate-price-prediction
-).
+The dataset can be found [HERE](https://www.kaggle.com/datasets/quantbruce/real-estate-price-prediction).
 
 # Observation
 
@@ -22,6 +21,7 @@ The dataset can be found [HERE](https://www.kaggle.com/datasets/quantbruce/real-
 The model was made succesfully and the *mean squared error* and *mean absolute error* were found.
 
 However, in the **Test Value V/S Residual Error** plot:
+
 
 ![TEST VALUE V/S Residual ERROR plot](/data/PLOT.png "Residual Error and True Value for Linear model")
 

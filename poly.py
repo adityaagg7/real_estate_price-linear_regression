@@ -1,3 +1,4 @@
+from sklearn.metrics import r2_score
 from turtle import color
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
@@ -21,7 +22,7 @@ poly_feat = PolynomialFeatures(degree=3)
 x_poly = poly_feat.fit_transform(x)
 
 x_poly_train, x_poly_test, y_train, y_test = train_test_split(
-    x, y, test_size=0.2, random_state=0)
+    x_poly, y, test_size=0.2, random_state=0)
 print(x.shape)
 print(x_poly.shape)
 
@@ -40,15 +41,16 @@ print(er)
 
 
 res_error = y_test-y_pred
+print(r2_score(y_test, y_pred))
 pt.scatter(y_test, res_error, color='Red')
 pt.xlabel('Test Value')
 pt.ylabel('Residual Error')
 pt.show()
 
 
-print(y_pred)
-print(y_test)
-print(res_error)
+# print(y_pred)
+# print(y_test)
+# print(res_error)
 
-average_res = sum(res_error)/len(res_error)
-print(average_res)
+# average_res = sum(res_error)/len(res_error)
+# print(average_res)

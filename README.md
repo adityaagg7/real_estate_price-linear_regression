@@ -1,6 +1,9 @@
 # real_estate_price-linear_regression
 ## About
-A multiple linear regression model to determine the price per unit area of property.
+A regression model to determine the price per unit area of property.
+Different methods used:
+1. Multiple Linear Regression
+2. Polynomial Regression
 
 
 ## Packages Used
@@ -12,8 +15,10 @@ A multiple linear regression model to determine the price per unit area of prope
 The dataset can be found [HERE](https://www.kaggle.com/datasets/quantbruce/real-estate-price-prediction
 ).
 
-## Observation
+# Observation
 
+
+## Linear Regression:
 The model was made succesfully and the *mean squared error* and *mean absolute error* were found.
 
 However, in the **Test Value V/S Residual Error** plot:
@@ -40,6 +45,6 @@ We immediately notice that:
  
  Both these observations mean that the model fit better than a linear model.
 
- This is further suppoorted \by the values of the R<sup>2</sup> scores for both:
+ This is further suppoorted by the values of the R<sup>2</sup> scores for both:
 
  Polynomial: ***0.9999999999999998***

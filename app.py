@@ -1,12 +1,12 @@
 
-from typing import List
+
 from sklearn import metrics
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as pt
-import hvplot
+
 
 df = pd.read_csv('data/Real estate.csv')
 df = df.drop_duplicates(keep="first")

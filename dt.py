@@ -1,7 +1,8 @@
 
 
+from sklearn.metrics import r2_score
 from sklearn import metrics
-from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
@@ -20,7 +21,7 @@ y = df.iloc[:, -1].values
 
 x_tr, x_t, y_tr, y_t = train_test_split(x, y, test_size=0.2, random_state=0)
 
-regressor = LinearRegression()
+regressor = DecisionTreeRegressor()
 regressor.fit(x_tr, y_tr)
 y_p = regressor.predict(x_t)
 
@@ -33,6 +34,9 @@ er = pd.DataFrame(error, columns=['Error', 'Value'])
 print(er)
 
 res_error = y_t-y_p
+
+print(r2_score(y_p, y_t))
+
 pt.scatter(y_t, res_error, color="red")
 pt.xlabel('Test Value')
 pt.ylabel('Residual Error')
